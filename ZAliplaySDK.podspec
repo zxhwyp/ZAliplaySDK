@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/zxhwyp/ZAliplaySDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
-  s.prefix_header_contents = '#import "AlivcMacro.h"','#import "AlivcImage.h"','#import "AVC_ShortVideo_Config.h",#import "AlivcMacro.h"','#import "AlivcImage.h",#import "AlivcMacro.h"','#import "AlivcImage.h"'
+  s.prefix_header_contents = '#import "AlivcMacro.h"','#import "AlivcImage.h"','#import "AVC_ShortVideo_Config.h"','#import "AlivcMacro.h"','#import "AlivcImage.h"','#import "AlivcMacro.h"','#import "AlivcImage.h"'
 
 
   s.ios.deployment_target = '8.0'
