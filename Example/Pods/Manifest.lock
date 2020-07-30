@@ -1,0 +1,98 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - AliPlayerSDK_iOS (5.1.4):
+    - AliPlayerSDK_iOS/AliPlayerSDK (= 5.1.4)
+  - AliPlayerSDK_iOS/AliPlayerSDK (5.1.4)
+  - AliPlayerSDK_iOS_ARTC (5.1.4):
+    - AliPlayerSDK_iOS_ARTC/AliPlayerSDK (= 5.1.4)
+  - AliPlayerSDK_iOS_ARTC/AliPlayerSDK (5.1.4)
+  - AliPlayerSDK_iOS_ARTP (5.1.4):
+    - AliPlayerSDK_iOS_ARTP/AliPlayerSDK (= 5.1.4)
+  - AliPlayerSDK_iOS_ARTP/AliPlayerSDK (5.1.4)
+  - CocoaAsyncSocket (7.6.4)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - IQKeyboardManager (6.5.5)
+  - JSONModel (1.8.0)
+  - MBProgressHUD (1.2.0)
+  - MJRefresh (3.1.15.7)
+  - MRDLNA (0.1.1):
+    - CocoaAsyncSocket
+    - MRDLNA/MRC (= 0.1.1)
+  - MRDLNA/MRC (0.1.1):
+    - CocoaAsyncSocket
+  - SDWebImage (5.8.4):
+    - SDWebImage/Core (= 5.8.4)
+  - SDWebImage/Core (5.8.4)
+  - ZAliplaySDK (0.1.0):
+    - AFNetworking
+    - AliPlayerSDK_iOS (= 5.1.4)
+    - AliPlayerSDK_iOS_ARTC (= 5.1.4)
+    - AliPlayerSDK_iOS_ARTP (= 5.1.4)
+    - FMDB
+    - IQKeyboardManager
+    - JSONModel
+    - MBProgressHUD
+    - MJRefresh (~> 3.1.15.7)
+    - MRDLNA
+    - SDWebImage
+    - ZipArchive
+  - ZipArchive (1.4.0)
+
+DEPENDENCIES:
+  - ZAliplaySDK (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - AFNetworking
+    - AliPlayerSDK_iOS
+    - AliPlayerSDK_iOS_ARTC
+    - AliPlayerSDK_iOS_ARTP
+    - CocoaAsyncSocket
+    - FMDB
+    - IQKeyboardManager
+    - JSONModel
+    - MBProgressHUD
+    - MJRefresh
+    - MRDLNA
+    - SDWebImage
+    - ZipArchive
+
+EXTERNAL SOURCES:
+  ZAliplaySDK:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  AliPlayerSDK_iOS: 2768ed10948f9044ae5a54b42cfcc662cd7748ea
+  AliPlayerSDK_iOS_ARTC: e8e2c7fcc22a2e5c279dee28e3459397e66032d2
+  AliPlayerSDK_iOS_ARTP: 681cbd31cabde3ce1ac9b2bb5da453a8a778c2db
+  CocoaAsyncSocket: 694058e7c0ed05a9e217d1b3c7ded962f4180845
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
+  JSONModel: 02ab723958366a3fd27da57ea2af2113658762e9
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  MRDLNA: 3fe35c6ac57c946413d07896faeb9101c4d8853d
+  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  ZAliplaySDK: bdef6119e01ace7153c635b0b729f1a7cb7000a0
+  ZipArchive: e25a4373192673e3229ac8d6e9f64a3e5713c966
+
+PODFILE CHECKSUM: 80fe47b4218ee0c73168fce539e12ac1e5ad2ab1
+
+COCOAPODS: 1.9.0

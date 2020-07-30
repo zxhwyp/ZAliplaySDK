@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		39B1B78EE88C4941E01F93A4 /* Pods_ZAliplaySDK_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7920DAB47BB2BC005D84ED37 /* Pods_ZAliplaySDK_Tests.framework */; };
+		5F7FDC5724D2B205003A516D /* AliyunPlayerFinishView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FDC5224D2B205003A516D /* AliyunPlayerFinishView.m */; };
+		5F7FDC5824D2B205003A516D /* encryptedApp.dat in Resources */ = {isa = PBXBuildFile; fileRef = 5F7FDC5524D2B205003A516D /* encryptedApp.dat */; };
+		5F7FDC5924D2B205003A516D /* AliPlayManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FDC5624D2B205003A516D /* AliPlayManger.m */; };
+		5F7FDC5C24D2B24E003A516D /* TestAlipayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F7FDC5B24D2B24E003A516D /* TestAlipayVC.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +43,13 @@
 /* Begin PBXFileReference section */
 		21973852D9A9A23D564B577A /* Pods_ZAliplaySDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAliplaySDK_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4462C263B07E7988799D3EEB /* Pods-ZAliplaySDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAliplaySDK_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZAliplaySDK_Tests/Pods-ZAliplaySDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F7FDC5224D2B205003A516D /* AliyunPlayerFinishView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliyunPlayerFinishView.m; sourceTree = "<group>"; };
+		5F7FDC5324D2B205003A516D /* AliPlayManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliPlayManger.h; sourceTree = "<group>"; };
+		5F7FDC5424D2B205003A516D /* AliyunPlayerFinishView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AliyunPlayerFinishView.h; sourceTree = "<group>"; };
+		5F7FDC5524D2B205003A516D /* encryptedApp.dat */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = encryptedApp.dat; sourceTree = "<group>"; };
+		5F7FDC5624D2B205003A516D /* AliPlayManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AliPlayManger.m; sourceTree = "<group>"; };
+		5F7FDC5A24D2B24E003A516D /* TestAlipayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAlipayVC.h; sourceTree = "<group>"; };
+		5F7FDC5B24D2B24E003A516D /* TestAlipayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAlipayVC.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ZAliplaySDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZAliplaySDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -58,15 +69,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		64D027EEE2B50E5A7F404C71 /* ZAliplaySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZAliplaySDK.podspec; path = ../ZAliplaySDK.podspec; sourceTree = "<group>"; };
+		64D027EEE2B50E5A7F404C71 /* ZAliplaySDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZAliplaySDK.podspec; path = ../ZAliplaySDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7920DAB47BB2BC005D84ED37 /* Pods_ZAliplaySDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZAliplaySDK_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A03C4B25959D413FDFE31A12 /* Pods-ZAliplaySDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAliplaySDK_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZAliplaySDK_Example/Pods-ZAliplaySDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		B0373C305B7F8F8E0AF3C1A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B0373C305B7F8F8E0AF3C1A8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		D9A7E97F269814D5BBD2857C /* Pods-ZAliplaySDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAliplaySDK_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZAliplaySDK_Tests/Pods-ZAliplaySDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		EB31765502C77312AB55F3BA /* Pods-ZAliplaySDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZAliplaySDK_Example.release.xcconfig"; path = "Target Support Files/Pods-ZAliplaySDK_Example/Pods-ZAliplaySDK_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F231ABF2D7273A56E9D6EE5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		F231ABF2D7273A56E9D6EE5C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +114,19 @@
 				4462C263B07E7988799D3EEB /* Pods-ZAliplaySDK_Tests.debug.xcconfig */,
 				D9A7E97F269814D5BBD2857C /* Pods-ZAliplaySDK_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		5F7FDC5124D2B205003A516D /* AliPlayManager */ = {
+			isa = PBXGroup;
+			children = (
+				5F7FDC5324D2B205003A516D /* AliPlayManger.h */,
+				5F7FDC5624D2B205003A516D /* AliPlayManger.m */,
+				5F7FDC5424D2B205003A516D /* AliyunPlayerFinishView.h */,
+				5F7FDC5224D2B205003A516D /* AliyunPlayerFinishView.m */,
+				5F7FDC5524D2B205003A516D /* encryptedApp.dat */,
+			);
+			path = AliPlayManager;
 			sourceTree = "<group>";
 		};
 		6003F581195388D10070C39A = {
@@ -144,8 +166,11 @@
 		6003F593195388D20070C39A /* Example for ZAliplaySDK */ = {
 			isa = PBXGroup;
 			children = (
+				5F7FDC5124D2B205003A516D /* AliPlayManager */,
 				6003F59C195388D20070C39A /* ZAppDelegate.h */,
 				6003F59D195388D20070C39A /* ZAppDelegate.m */,
+				5F7FDC5A24D2B24E003A516D /* TestAlipayVC.h */,
+				5F7FDC5B24D2B24E003A516D /* TestAlipayVC.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* ZViewController.h */,
 				6003F5A6195388D20070C39A /* ZViewController.m */,
@@ -209,6 +234,7 @@
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
 				3434E16E0BA5474CD2A7D144 /* [CP] Embed Pods Frameworks */,
+				EDEAC0D60C5D08A5604F16CC /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,6 +284,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,6 +304,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F7FDC5824D2B205003A516D /* encryptedApp.dat in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
@@ -302,11 +330,43 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ZAliplaySDK_Example/Pods-ZAliplaySDK_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/ZAliplaySDK/ZAliplaySDK.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${PODS_ROOT}/AliPlayerSDK_iOS/AliyunPlayer.framework",
+				"${PODS_ROOT}/AliPlayerSDK_iOS/alivcffmpeg.framework",
+				"${PODS_ROOT}/AliPlayerSDK_iOS/AlivcConan.framework",
+				"${PODS_ROOT}/AliPlayerSDK_iOS/AliyunMediaDownloader.framework",
+				"${PODS_ROOT}/AliPlayerSDK_iOS_ARTC/artcSource.framework",
+				"${PODS_ROOT}/AliPlayerSDK_iOS_ARTC/FfmcdnGlue.framework",
+				"${PODS_ROOT}/AliPlayerSDK_iOS_ARTP/artpSource.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/JSONModel/JSONModel.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MRDLNA/MRDLNA.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ZipArchive/ZipArchive.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZAliplaySDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/alivcffmpeg.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlivcConan.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AliyunMediaDownloader.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/artcSource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FfmcdnGlue.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/artpSource.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaAsyncSocket.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSONModel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRDLNA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZipArchive.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -357,6 +417,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		EDEAC0D60C5D08A5604F16CC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZAliplaySDK_Example/Pods-ZAliplaySDK_Example-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/ZAliplaySDK/ZAliplaySDK.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ZAliplaySDK.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZAliplaySDK_Example/Pods-ZAliplaySDK_Example-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -366,7 +444,10 @@
 			files = (
 				6003F59E195388D20070C39A /* ZAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* ZViewController.m in Sources */,
+				5F7FDC5C24D2B24E003A516D /* TestAlipayVC.m in Sources */,
+				5F7FDC5724D2B205003A516D /* AliyunPlayerFinishView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				5F7FDC5924D2B205003A516D /* AliPlayManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

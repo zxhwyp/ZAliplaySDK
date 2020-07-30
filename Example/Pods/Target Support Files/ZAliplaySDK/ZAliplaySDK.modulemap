@@ -1,0 +1,6 @@
+framework module ZAliplaySDK {
+  umbrella header "ZAliplaySDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

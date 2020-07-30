@@ -49,28 +49,28 @@
 #pragma mark 新播放器请求和播放
 
 - (void)getNewPlayerPlayList {
-    [AVPTool loadingHudToView:self.view];
-    [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoList success:^(AVPDemoResponseModel *resultModel) {
-        [AVPTool hideLoadingHudForView:self.view];
-        NSMutableArray <AlivcLongVideoTVModel *>*tempArray = [NSMutableArray array];
-        NSMutableArray <NSString *>*array = [NSMutableArray array];
-        for (AVPDemoResponseVideoListModel *model in resultModel.data.videoList) {
-            AlivcLongVideoTVModel *TVmodel = [[AlivcLongVideoTVModel alloc]init];
-            TVmodel.videoId = model.videoId;
-            TVmodel.coverUrl = model.coverUrl;
-            TVmodel.title = model.title;
-            TVmodel.descriptionStr = model.descriptionStr;
-            [tempArray addObject:TVmodel];
-            [array addObject:model.videoId];
-        }
-        
-        [self.manager setVidsArray:array];
-        [self.manager startVidPlay];
-        [self.manager prePlayWithTimeInterval:60];
-    } failure:^(NSString *errorMsg) {
-        [AVPTool hideLoadingHudForView:self.view];
-        [AVPTool hudWithText:errorMsg view:self.view];
-    }];
+//    [AVPTool loadingHudToView:self.view];
+//    [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoList success:^(AVPDemoResponseModel *resultModel) {
+//        [AVPTool hideLoadingHudForView:self.view];
+//        NSMutableArray <AlivcLongVideoTVModel *>*tempArray = [NSMutableArray array];
+//        NSMutableArray <NSString *>*array = [NSMutableArray array];
+//        for (AVPDemoResponseVideoListModel *model in resultModel.data.videoList) {
+//            AlivcLongVideoTVModel *TVmodel = [[AlivcLongVideoTVModel alloc]init];
+//            TVmodel.videoId = model.videoId;
+//            TVmodel.coverUrl = model.coverUrl;
+//            TVmodel.title = model.title;
+//            TVmodel.descriptionStr = model.descriptionStr;
+//            [tempArray addObject:TVmodel];
+//            [array addObject:model.videoId];
+//        }
+//
+//        [self.manager setVidsArray:array];
+//        [self.manager startVidPlay];
+//        [self.manager prePlayWithTimeInterval:60];
+//    } failure:^(NSString *errorMsg) {
+//        [AVPTool hideLoadingHudForView:self.view];
+//        [AVPTool hudWithText:errorMsg view:self.view];
+//    }];
 }
 
 

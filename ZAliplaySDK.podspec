@@ -27,14 +27,41 @@ TODO: Add long description of the pod here.
   s.author           = { '周小华' => 'zxhworkmail@163.com' }
   s.source           = { :git => 'https://github.com/周小华/ZAliplaySDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  
+  s.prefix_header_contents = '#import "AlivcMacro.h"','#import "AlivcImage.h"','#import "AVC_ShortVideo_Config.h",#import "AlivcMacro.h"','#import "AlivcImage.h",#import "AlivcMacro.h"','#import "AlivcImage.h"'
+
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'ZAliplaySDK/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ZAliplaySDK' => ['ZAliplaySDK/Assets/*.png']
-  # }
+
+  s.static_framework = true
+
+  s.dependency 'AFNetworking'
+
+  s.dependency 'FMDB'
+
+  s.dependency 'JSONModel'
+
+  s.dependency  'ZipArchive'
+
+  s.dependency  'MBProgressHUD'
+
+  s.dependency  'SDWebImage'
+
+  s.dependency 'IQKeyboardManager'
+  
+  s.dependency 'MJRefresh', '~> 3.1.15.7'
+  s.dependency 'MRDLNA'
+
+  s.dependency 'AliPlayerSDK_iOS', '5.1.4'
+  s.dependency 'AliPlayerSDK_iOS_ARTP', '5.1.4'
+  s.dependency 'AliPlayerSDK_iOS_ARTC', '5.1.4'
+
+   s.resource_bundles = {
+     'ZAliplaySDK' => ['ZAliplaySDK/Assets/**/*']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
