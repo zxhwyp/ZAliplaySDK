@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ZAliplaySDK_Example' do
+  pod 'ZAliplaySDK', :path => '../'
+
+  target 'ZAliplaySDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
