@@ -7,6 +7,7 @@
 //
 
 #import "ZViewController.h"
+#import "TestAlipayVC.h"
 
 @interface ZViewController ()
 
@@ -17,7 +18,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +27,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    TestAlipayVC *vc = [TestAlipayVC new];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 @end

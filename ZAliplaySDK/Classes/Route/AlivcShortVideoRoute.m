@@ -51,14 +51,14 @@ static AlivcShortVideoRoute *_instance = nil;
 //            [AlivcImage setImageBundleName:@"AlivcShortVideoImage"];
             [AliyunIConfig setConfig:[[AliyunIConfig alloc]init]];//注册功能配置类
             
-            Class aliyunEffectPrestoreManager = NSClassFromString(@"AliyunEffectPrestoreManager");
-            if (aliyunEffectPrestoreManager) {
-                NSObject *obj = [[aliyunEffectPrestoreManager alloc]init];
-                if ([obj respondsToSelector:@selector(insertInitialData)]) {
-                    [obj performSelector:@selector(insertInitialData)];//初始化动图资源
-                }
-                
-            }
+//            Class aliyunEffectPrestoreManager = NSClassFromString(@"AliyunEffectPrestoreManager");
+//            if (aliyunEffectPrestoreManager) {
+//                NSObject *obj = [[aliyunEffectPrestoreManager alloc]init];
+//                if ([obj respondsToSelector:@selector(insertInitialData)]) {
+//                    [obj performSelector:@selector(insertInitialData)];//初始化动图资源
+//                }
+//
+//            }
             
         }
         

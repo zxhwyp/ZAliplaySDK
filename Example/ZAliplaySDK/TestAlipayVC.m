@@ -49,30 +49,102 @@
 #pragma mark 新播放器请求和播放
 
 - (void)getNewPlayerPlayList {
-//    [AVPTool loadingHudToView:self.view];
-//    [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoList success:^(AVPDemoResponseModel *resultModel) {
-//        [AVPTool hideLoadingHudForView:self.view];
-//        NSMutableArray <AlivcLongVideoTVModel *>*tempArray = [NSMutableArray array];
-//        NSMutableArray <NSString *>*array = [NSMutableArray array];
-//        for (AVPDemoResponseVideoListModel *model in resultModel.data.videoList) {
-//            AlivcLongVideoTVModel *TVmodel = [[AlivcLongVideoTVModel alloc]init];
-//            TVmodel.videoId = model.videoId;
-//            TVmodel.coverUrl = model.coverUrl;
-//            TVmodel.title = model.title;
-//            TVmodel.descriptionStr = model.descriptionStr;
-//            [tempArray addObject:TVmodel];
-//            [array addObject:model.videoId];
-//        }
-//
-//        [self.manager setVidsArray:array];
-//        [self.manager startVidPlay];
+    [AVPTool loadingHudToView:self.view];
+    [AlivcPlayVideoRequestManager getWithParameters:nil urlType:AVPUrlTypePlayerVideoList success:^(AVPDemoResponseModel *resultModel) {
+        [AVPTool hideLoadingHudForView:self.view];
+        NSMutableArray <AlivcLongVideoTVModel *>*tempArray = [NSMutableArray array];
+        NSMutableArray <NSString *>*array = [NSMutableArray array];
+        for (AVPDemoResponseVideoListModel *model in resultModel.data.videoList) {
+            AlivcLongVideoTVModel *TVmodel = [[AlivcLongVideoTVModel alloc]init];
+            TVmodel.videoId = model.videoId;
+            TVmodel.coverUrl = model.coverUrl;
+            TVmodel.title = model.title;
+            TVmodel.descriptionStr = model.descriptionStr;
+            [tempArray addObject:TVmodel];
+            [array addObject:model.videoId];
+        }
+
+        [self.manager setVidsArray:array];
+        [self.manager startVidPlay];
 //        [self.manager prePlayWithTimeInterval:60];
-//    } failure:^(NSString *errorMsg) {
-//        [AVPTool hideLoadingHudForView:self.view];
-//        [AVPTool hudWithText:errorMsg view:self.view];
-//    }];
+    } failure:^(NSString *errorMsg) {
+        [AVPTool hideLoadingHudForView:self.view];
+        [AVPTool hudWithText:errorMsg view:self.view];
+    }];
 }
 
 
+
+- (void)aliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView fullScreen:(BOOL)isFullScreen {
+    
+}
+
+- (void)aliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView happen:(AVPEventType)event {
+    
+}
+
+- (void)aliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView lockScreen:(BOOL)isLockScreen {
+    
+}
+
+- (void)aliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView onPause:(NSTimeInterval)currentPlayTime {
+    
+}
+
+- (void)aliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView onResume:(NSTimeInterval)currentPlayTime {
+    
+}
+
+- (void)aliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView onSeekDone:(NSTimeInterval)seekDoneTime {
+    
+}
+
+- (void)aliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView onStop:(NSTimeInterval)currentPlayTime {
+    
+}
+
+- (void)onBackViewClickWithAliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onCircleStartWithVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onClickedAirPlayButtonWithVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onClickedBarrageBtnWithVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onCurrentWatchProgressChangedWithVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView progress:(NSInteger)Progress {
+    
+}
+
+- (void)onDownloadButtonClickWithAliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onFinishWithAliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onRetryButtonClickWithAliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onSecurityTokenExpiredWithAliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)onUpdateLiveStsWithAliyunVodPlayerView:(nonnull AlivcLongVideoPlayView *)playerView {
+    
+}
+
+- (void)encodeWithCoder:(nonnull NSCoder *)coder {
+    
+}
 
 @end

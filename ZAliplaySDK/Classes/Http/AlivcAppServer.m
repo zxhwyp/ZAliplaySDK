@@ -26,7 +26,7 @@
         manager.securityPolicy.allowInvalidCertificates = YES;
         manager.securityPolicy.validatesDomainName = NO;
         
-#warning 等接口完成后，这里还需要修改
+//#warning 等接口完成后，这里还需要修改
 //        NSDictionary *appInfo = [[NSBundle mainBundle] infoDictionary];
 //        NSString *app_Name = [appInfo objectForKey:@"CFBundleDisplayName"];
 //        NSString *app_Version = [appInfo objectForKey:@"CFBundleShortVersionString"];
@@ -50,7 +50,7 @@
               parameters:(id)parameters
        completionHandler:(void (^)(NSString *__nullable errString,NSDictionary *_Nullable resultDic))handle{
    
-      #warning 尊敬的客户，此Server服务只用于demo演示使用，我们不建议您将此演示接口用作线上环境，请自行搭建自己的Server服务，如何集成自己的Server服务详见文档：https://help.aliyun.com/document_detail/108783.html?spm=a2c4g.11186623.6.1075.a70a3a4895Qysq。
+//      #warning 尊敬的客户，此Server服务只用于demo演示使用，我们不建议您将此演示接口用作线上环境，请自行搭建自己的Server服务，如何集成自己的Server服务详见文档：https://help.aliyun.com/document_detail/108783.html?spm=a2c4g.11186623.6.1075.a70a3a4895Qysq。
     NSMutableString * string ;
     NSDictionary *paraDic = [NSDictionary dictionaryWithDictionary:parameters];
     if (paraDic && paraDic.count >0 ) {
@@ -79,7 +79,7 @@
 }
 + (void)postWithUrlString:(NSString *)urlString parameters:(NSDictionary *)parametersDic completionHandler:(void (^)(NSString * _Nullable, NSDictionary * _Nullable))handle{
     
-#warning 尊敬的客户，此Server服务只用于demo演示使用，我们不建议您将此演示接口用作线上环境，请自行搭建自己的Server服务，如何集成自己的Server服务详见文档：https://help.aliyun.com/document_detail/108783.html?spm=a2c4g.11186623.6.1075.a70a3a4895Qysq。
+//#warning 尊敬的客户，此Server服务只用于demo演示使用，我们不建议您将此演示接口用作线上环境，请自行搭建自己的Server服务，如何集成自己的Server服务详见文档：https://help.aliyun.com/document_detail/108783.html?spm=a2c4g.11186623.6.1075.a70a3a4895Qysq。
     NSString *bundleID = [[NSBundle mainBundle] bundleIdentifier];
     NSMutableDictionary *mutableParaDic = [[NSMutableDictionary alloc]initWithDictionary:parametersDic];
     if ([urlString hasPrefix:AlivcVideoPlayUrlString]) {

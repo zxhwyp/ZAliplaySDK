@@ -47,7 +47,7 @@ static NSString *theBundleName = @"Null";
 
 + (UIImage *__nullable)imageInBasicVideoNamed:(NSString *)imageName {
     NSBundle *currentBundle = [NSBundle bundleForClass:[self class]];
-    NSString *imagePath = [NSString stringWithFormat:@"AlivcBasicVideo.bundle/%@",imageName];
+    NSString *imagePath = [NSString stringWithFormat:@"ZAAlivcBasicVideo.bundle/%@",imageName];
     NSString *fullPath = [[currentBundle resourcePath] stringByAppendingPathComponent:imagePath];
     return [UIImage imageWithContentsOfFile:fullPath];
 }
