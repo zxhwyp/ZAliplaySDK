@@ -8,13 +8,13 @@
 #import <UIKit/UIKit.h>
 #import "AlivcUIConfig.h"
 
-typedef void(^selectChangedCallBack)(NSInteger index);
+typedef void(^zselectChangedCallBack)(NSInteger index);
 
 @interface AlivcVideoPlayButtonSelectView : UIView
 
 @property (nonatomic,assign)NSInteger selectIndex;
 @property (nonatomic,assign)CGFloat viewHeight;
-@property (nonatomic,strong)selectChangedCallBack callBack;
+@property (nonatomic,strong)zselectChangedCallBack callBack;
 
 - (instancetype)initWithTitle:(NSString *)title sourceArray:(NSArray <NSString *>*)array width:(CGFloat)width;
 
